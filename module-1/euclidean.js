@@ -24,4 +24,5 @@ function euclidean(a, b) {
     }
     return gcd;
 }
+console.log(euclidean(39, 99));
 module.exports = euclidean;
