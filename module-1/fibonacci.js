@@ -23,4 +23,7 @@ if (n < 0) {
     return nThFibonacci;
 }
 
+console.log(fibonacci(39));
+
+
 module.exports = fibonacci;
