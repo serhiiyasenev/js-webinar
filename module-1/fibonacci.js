@@ -10,20 +10,8 @@
  */
 function fibonacci(n) {
     let nThFibonacci;
-
-if (n < 0) {
-    nThFibonacci = 0;
-} else {
-    if (n < 2) {
-        nThFibonacci = n;
-    } else {
-        nThFibonacci = fibonacci(n - 2) + fibonacci(n - 1);
-    }
-}
-    return nThFibonacci;
+    return n <= 0 ? 0 : n === 1 ? n : fibonacci(n - 2) + fibonacci(n - 1);
 }
 
 console.log(fibonacci(39));
-
-
 module.exports = fibonacci;
